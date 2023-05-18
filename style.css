@@ -56,6 +56,8 @@ select option {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+object-position: 50% 40%;
+
 }
 .about-me .about-me-header .photo-name .my-name {
   color: #fff;
