@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$yellow-green: #ffdf8d;
+$white-color: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #6974d7, rgba(8, 20, 4, 0.5098039216));
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+select{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    background-color: #0a0e31;
+    color: $white-color;
+    padding: 10px;
+    outline: 0;
+    border-radius: 10px;
+
+    option{
+        width: 100px;
+        line-height: 4;
+        background-color: #333;
+    }
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    background-color: #0a0e31;
+    padding: 10px 0px 70px 0px;
+    height: 100%;
+
+    .about-me-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .photo-name {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            align-items: center;
+
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 50%;
+
+            }
+
+            .my-name {
+                color: $white-color;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .job-name {
+                color: $yellow-green;
+                text-align: center;
+            }
+
+            span {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+
+        }
+
+        .phone-email {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            gap: 5px;
+
+            a {
+                color: $white-color;
+                text-decoration: none;
+                font-family: sans-serif;
+            }
+        }
+
+    }
+
+    .gradient-hrr {
+        width: 80%;
+        height: 2px;
+        display: block;
+        background: linear-gradient(to right, #ffffff, $yellow-green);
+        margin-top: 20px;
+
+    }
+
+    .english {
+        color: $white-color;
+        margin-top: 15px;
+    }
+
+    .skils {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+
+        .skils-container {
+            display: flex;
+            justify-content: space-around;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                li {
+                    list-style: none;
+                    color: $white-color;
+                    font-size: 18px;
+
+                }
+            }
+
+            h3 {
+                color: $yellow-green;
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+        }
+
+        .atm {
+            text-align: center;
+            color: $yellow-green;
+            margin-top: 20px;
+        }
+
+
+    }
+}
+
+.about-me-links {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+    margin-top: 40px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        transition-duration: .5s;
+
+        &:hover {
+            scale: 1.2;
+        }
+    }
+}
+
+.my-projects {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    margin-top: 50px;
+
+    .my-projects-h1,
+    p {
+        color: $white-color;
+        text-align: center;
+    }
+
+    .my-projects-h1 {
+        font-size: 44px;
+    }
+
+    .projects-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px;
+        row-gap: 40px;
+
+        .project {
+            width: 40%;
+            background-color: #0a0e31;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            text-decoration: none;
+            transition-duration: .5s;
+
+            &:hover {
+                scale: 1.1;
+            }
+
+            h3 {
+                color: #ffdf8d;
+            }
+
+            p {
+                color: $white-color;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+
+            }
+
+            span {
+                padding: 5% 5% 5% 5%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                position: relative;
+
+                p {
+                    line-height: 150%;
+                    text-align: start;
+                }
+
+
+            }
+        }
+    }
+}
+
+.password-img {
+    border: 1px solid #0a0e31;
+}
+
+@media screen and (max-width: 992px) {
+    .about-me {
+        padding: 10px 40px 70px 40px;
+
+        .gradient-hrr {
+            width: 100%;
+        }
+
+        .skils {
+            width: 100%;
+
+            .skils-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+
+                ul {
+                    align-items: center;
+                }
+
+                h3 {
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .my-projects {
+
+        .my-projects-h1 {
+            font-size: 36px;
+        }
+
+        .projects-container {
+
+            .project {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .about-me {
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+
+        .about-me-header {
+
+            .photo-name {
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+
+        .gradient-hrr {
+            height: 1.5px;
+            width: 80%;
+        }
+
+        .skils {
+            flex-direction: column;
+
+            .skils-container {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .atm {
+                margin-top: 30px;
+            }
+
+
+        }
+    }
+
+    .about-me-links {
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .my-projects {
+        width: 100%;
+
+
+        .my-projects-h1 {
+            font-size: 36px;
+        }
+
+        .projects-container {
+
+            .project {
+                width: 80%;
+
+                .tatto-p {
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+}
