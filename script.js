@@ -21,7 +21,6 @@ function changeLanguage() {
     document.querySelector('.my-name').innerHTML = langArr['my-name'][hash]
     document.querySelector('.stack').innerHTML = langArr['stack'][hash]
     document.querySelector('.librares').innerHTML = langArr['librares'][hash]
-    document.querySelector('.atm').innerHTML = langArr['atm'][hash]
     document.querySelector('.my-projects-h1').innerHTML = langArr['my-projects-h1'][hash]
     document.querySelector('.click-p').innerHTML = langArr['click-p'][hash]
     document.querySelector('.tatto-h3').innerHTML = langArr['tatto-h3'][hash]
